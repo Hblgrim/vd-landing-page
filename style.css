@@ -15,3 +15,42 @@
 .service-grid i svg{width:57px;height:57px;stroke:none}
 .service-grid article:first-child i svg{width:62px;height:62px}
 @media(max-width:1200px){.service-grid i svg{width:48px;height:48px}.service-grid article:first-child i svg{width:53px;height:53px}}
+
+.contact-grid>.contact-address-group{display:flex;flex-direction:column;gap:18px}.contact-address-group>a{display:flex;align-items:flex-start;gap:12px;font-size:13px;line-height:1.45}@media(max-width:600px){.contact-address-group>a{font-size:14px}}
+
+/* Membership marks in the right-hand footer column. */
+.footer-content{grid-template-columns:1.15fr .8fr 1fr 1.1fr 1.15fr;gap:30px}
+.footer-content>div{min-width:0}
+.footer-content .logo{width:100%;max-width:240px}
+.footer-content .footer-memberships h3{font-size:15px;white-space:nowrap;margin-bottom:18px}
+.membership-logos{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.membership-logos img{display:block;width:100%;max-width:205px;height:auto;object-fit:contain}
+.footer-content a{overflow-wrap:anywhere}
+@media(max-width:1100px){.footer-content{grid-template-columns:1fr 1fr 1fr;gap:30px}.footer-memberships{grid-column:3;grid-row:1 / span 2}.footer-content .logo{max-width:210px}}
+@media(max-width:600px){.footer-content{grid-template-columns:1fr 1fr;gap:28px 20px}.footer-content>a:first-child{grid-column:1/-1}.footer-content .footer-memberships{grid-column:1/-1;grid-row:auto}.footer-content .logo{width:220px;max-width:100%}.membership-logos{align-items:flex-start}.membership-logos img{max-width:205px}}
+/* Keep the membership column in proportion with the footer navigation. */
+.footer-content{align-items:start;grid-template-columns:1.2fr .8fr 1fr 1.1fr 170px;gap:28px}
+.footer-content .footer-memberships h3{font-size:14px;line-height:1.45;margin-bottom:13px}
+.membership-logos{gap:10px;align-items:flex-start}
+.membership-logos img{width:150px;max-width:100%;height:54px;object-fit:contain;object-position:left center}
+@media(max-width:1100px){.footer-content{grid-template-columns:1fr 1fr 170px;gap:26px}}
+@media(max-width:600px){.footer-content{grid-template-columns:1fr 1fr;gap:26px 20px}.membership-logos{flex-direction:row;flex-wrap:wrap;align-items:center;gap:16px}.membership-logos img{width:auto;max-width:125px;height:50px;object-position:left center}}
+
+/* Slightly larger membership marks while preserving their proportions. */
+.membership-logos{gap:12px}
+.membership-logos img{width:170px;max-width:100%;height:72px;object-fit:contain;object-position:left center}
+@media(max-width:600px){.membership-logos{gap:16px}.membership-logos img{width:auto;max-width:155px;height:64px}}
+
+/* Leadership: matching portrait and initials medallions. */
+.leadership{padding-top:8px;padding-bottom:58px}
+.leadership-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:27px}
+.leader-card{display:flex;align-items:center;gap:28px;padding:30px;border:1px solid #e8eee9;border-radius:18px;background:linear-gradient(120deg,#f7faf4,#fff 72%);min-width:0}
+.leader-avatar{width:152px;height:152px;flex:0 0 152px;border-radius:50%;overflow:hidden;background:#e9f1e3;border:5px solid white;box-shadow:0 0 0 1px #e2ebdb}
+.leader-avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+.leader-initials{display:grid;place-items:center;background:linear-gradient(140deg,#edf5e6,#e5eff7);color:var(--blue)}
+.leader-initials span{font-size:46px;font-weight:700;letter-spacing:2px;line-height:1}
+.leader-info{min-width:0}.leader-role{color:#4d852e;font-size:14px;font-weight:700;line-height:1.5;margin:0 0 9px}.leader-info h3{color:var(--blue);font-size:26px;line-height:1.25;margin:0;overflow-wrap:break-word}.leader-rule{width:44px;height:3px;background:#6baa40;border-radius:3px;margin-top:17px}
+@media(max-width:1100px){.leader-card{padding:24px;gap:21px}.leader-avatar{width:120px;height:120px;flex-basis:120px}.leader-info h3{font-size:23px}.leader-role{font-size:14px}}
+@media(max-width:800px){.leadership-grid{gap:18px}.leader-card{flex-direction:column;text-align:center;padding:25px 18px;gap:19px}.leader-role{min-height:42px;display:flex;align-items:center;justify-content:center}.leader-rule{margin:16px auto 0}.leader-avatar{width:132px;height:132px;flex-basis:132px}}
+@media(max-width:600px){.leadership{padding-top:5px;padding-bottom:38px}.leadership-grid{grid-template-columns:1fr;gap:17px;margin-top:22px}.leader-card{flex-direction:row;text-align:left;padding:22px 18px;gap:20px}.leader-avatar{width:104px;height:104px;flex-basis:104px}.leader-initials span{font-size:34px}.leader-info h3{font-size:23px}.leader-role{min-height:0;display:block;font-size:14px;margin-bottom:7px}.leader-rule{margin:14px 0 0}}
+@media(max-width:360px){.leader-card{gap:14px;padding:20px 14px}.leader-avatar{width:82px;height:82px;flex-basis:82px}.leader-info h3{font-size:21px}}
